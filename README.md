@@ -9,13 +9,15 @@ In high-concurrency environments, identical queries (same DB row, same cache key
 ## Install
 
 ```bash
-bun add inflight
+bun add @inflightjs/inflight
+# or
+npm install @inflightjs/inflight
 ```
 
 ## Usage
 
 ```ts
-import { InFlight } from "inflight";
+import { InFlight } from "@inflightjs/inflight";
 import { eq } from "drizzle-orm";
 import { users } from "./schema";
 import IoValkey from "iovalkey";
